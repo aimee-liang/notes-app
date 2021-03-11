@@ -11,6 +11,9 @@
 		AA3BC06125FACEC0004886B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3BC06025FACEC0004886B7 /* ContentView.swift */; };
 		AA3BC06325FACEC1004886B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA3BC06225FACEC1004886B7 /* Assets.xcassets */; };
 		AA3BC06625FACEC1004886B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA3BC06525FACEC1004886B7 /* Preview Assets.xcassets */; };
+		AA3BC06F25FACFBB004886B7 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3BC06E25FACFBB004886B7 /* NoteViewController.swift */; };
+		AA3BC07125FACFE4004886B7 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3BC07025FACFE4004886B7 /* EntryViewController.swift */; };
+		AA3BC07325FAD3D0004886B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3BC07225FAD3D0004886B7 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,10 @@
 		AA3BC06225FACEC1004886B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA3BC06525FACEC1004886B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AA3BC06725FACEC1004886B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA3BC06D25FACF0A004886B7 /* Notes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Notes.entitlements; sourceTree = "<group>"; };
+		AA3BC06E25FACFBB004886B7 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		AA3BC07025FACFE4004886B7 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		AA3BC07225FAD3D0004886B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +59,15 @@
 		AA3BC05D25FACEC0004886B7 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
+				AA3BC06D25FACF0A004886B7 /* Notes.entitlements */,
 				AA3BC05E25FACEC0004886B7 /* NotesApp.swift */,
 				AA3BC06025FACEC0004886B7 /* ContentView.swift */,
 				AA3BC06225FACEC1004886B7 /* Assets.xcassets */,
 				AA3BC06725FACEC1004886B7 /* Info.plist */,
 				AA3BC06425FACEC1004886B7 /* Preview Content */,
+				AA3BC06E25FACFBB004886B7 /* NoteViewController.swift */,
+				AA3BC07025FACFE4004886B7 /* EntryViewController.swift */,
+				AA3BC07225FAD3D0004886B7 /* ViewController.swift */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -138,7 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA3BC07325FAD3D0004886B7 /* ViewController.swift in Sources */,
 				AA3BC06125FACEC0004886B7 /* ContentView.swift in Sources */,
+				AA3BC07125FACFE4004886B7 /* EntryViewController.swift in Sources */,
+				AA3BC06F25FACFBB004886B7 /* NoteViewController.swift in Sources */,
 				AA3BC05F25FACEC0004886B7 /* NotesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +281,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Notes/Notes.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Notes/Preview Content\"";
 				DEVELOPMENT_TEAM = 8B5M3UU63G;
@@ -279,6 +294,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = FirstSwiftNotes.Notes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,6 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Notes/Notes.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Notes/Preview Content\"";
 				DEVELOPMENT_TEAM = 8B5M3UU63G;
@@ -301,6 +318,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = FirstSwiftNotes.Notes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
