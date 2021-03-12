@@ -21,7 +21,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         title = "Notes"
     }
     @IBAction func didTapNewNote(){
-        
+        guard let vc = storyboard?.instantiateViewController(identifier: "new") as? EntryViewController else {
+            return
+        }
+        vc.title = "New Note"
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSections section: Int){
