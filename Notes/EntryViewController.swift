@@ -9,12 +9,12 @@ import UIKit
 
 class EntryViewController: UIViewController {
 
-    @IBOutlet var titleField
+    @IBOutlet var titleField: UITextField
+    @IBOutlet var noteField: UITextView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        titleField.becomeFirstResponder()
     }
     
     
