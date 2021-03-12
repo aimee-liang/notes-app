@@ -42,7 +42,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return
         }
         vc.title = "Note"
-        UINavigationController.pushViewController(vc, ani)
+        navigationController?.pushViewController(vc, animated: true)
         }
     }
     
