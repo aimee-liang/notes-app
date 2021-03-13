@@ -12,9 +12,12 @@ class EntryViewController: UIViewController {
     @IBOutlet var titleField: UITextField
     @IBOutlet var noteField: UITextView
     
+    public var completion: ((String, String) -> Void)/
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         titleField.becomeFirstResponder()
+        navigationItem.rightBarButtonItem
     }
     
     
