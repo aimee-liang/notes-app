@@ -9,15 +9,15 @@ import UIKit
 
 class EntryViewController: UIViewController {
 
-    @IBOutlet var titleField: UITextField
-    @IBOutlet var noteField: UITextView
+    @IBOutlet var titleField: UITextField!
+    @IBOutlet var noteField: UITextView!
     
     public var completion: ((String, String) -> Void)?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         titleField.becomeFirstResponder()
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(<#T##@objc method#>))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(didTapSave))
     }
     
     @objc func didTapSave(){
