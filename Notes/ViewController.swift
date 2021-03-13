@@ -25,6 +25,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return
         }
         vc.title = "New Note"
+        vc.navigationItem.largeTitleDisplayMode = .never
+        vc.completion = {noteTitle, note in
+            self.models.append((title: noteTitle, note: note))
+            self.label.isHidden = true
+            self.table.isHidden = false
+            self.table.reloadData()
+        }
         navigationController?.pushViewController(vc, animated: true)
     }
     
