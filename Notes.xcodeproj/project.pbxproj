@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA28069825FEC2E900E79559 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA28069725FEC2E900E79559 /* AppDelegate.swift */; };
 		AA3BC05F25FACEC0004886B7 /* NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3BC05E25FACEC0004886B7 /* NotesApp.swift */; };
 		AA3BC06125FACEC0004886B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3BC06025FACEC0004886B7 /* ContentView.swift */; };
 		AA3BC06325FACEC1004886B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA3BC06225FACEC1004886B7 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA28069725FEC2E900E79559 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA3BC05B25FACEC0004886B7 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA3BC05E25FACEC0004886B7 /* NotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp.swift; sourceTree = "<group>"; };
 		AA3BC06025FACEC0004886B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				AA3BC06E25FACFBB004886B7 /* NoteViewController.swift */,
 				AA3BC07025FACFE4004886B7 /* EntryViewController.swift */,
 				AA3BC07225FAD3D0004886B7 /* ViewController.swift */,
+				AA28069725FEC2E900E79559 /* AppDelegate.swift */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA28069825FEC2E900E79559 /* AppDelegate.swift in Sources */,
 				AA3BC07325FAD3D0004886B7 /* ViewController.swift in Sources */,
 				AA3BC06125FACEC0004886B7 /* ContentView.swift in Sources */,
 				AA3BC07125FACFE4004886B7 /* EntryViewController.swift in Sources */,

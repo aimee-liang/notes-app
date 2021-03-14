@@ -20,13 +20,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         table.dataSource = self
         title = "Notes"
     }
+    
     @IBAction func didTapNewNote(){
         guard let vc = storyboard?.instantiateViewController(identifier: "new") as? EntryViewController else {
             return
         }
         vc.title = "New Note"
         vc.navigationItem.largeTitleDisplayMode = .never
-        vc.completion = {noteTitle, note in
+        vc.completion = { noteTitle, note in
             self.navigationController?.popToRootViewController(animated: true)
             self.models.append((title: noteTitle, note: note))
             self.label.isHidden = true
@@ -48,7 +49,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: <#T##IndexPath#>, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
         
         let model = models[indexPath.row]
         
