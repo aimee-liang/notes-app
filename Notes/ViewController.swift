@@ -36,7 +36,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         navigationController?.pushViewController(vc, animated: true)
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSections section: Int){
+    func tableView(_ tableView: UITableView, numberOfRowsInSections section: Int) -> Int{
         return models.count
     }
 
