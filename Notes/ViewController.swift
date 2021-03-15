@@ -21,7 +21,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         title = "Notes"
     }
 
-    @IBAction func didTapNewNote(){
+    @IBAction func didTapNewNote() {
         guard let vc = storyboard?.instantiateViewController(identifier: "new") as? EntryViewController else {
             return
         }
@@ -64,3 +64,5 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
 }
+
+
