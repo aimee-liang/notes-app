@@ -8,19 +8,19 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     @IBOutlet var table: UITableView!
     @IBOutlet var label: UILabel!
-    
+
     var models: [(title: String, note: String)] = []
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         table.delegate = self
         table.dataSource = self
         title = "Notes"
     }
-    
+
     @IBAction func didTapNewNote(){
         guard let vc = storyboard?.instantiateViewController(identifier: "new") as? EntryViewController else {
             return
@@ -36,7 +36,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         navigationController?.pushViewController(vc, animated: true)
     }
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return models.count
     }
@@ -50,9 +50,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
+
         let model = models[indexPath.row]
-        
+
         guard let vc = storyboard?.instantiateViewController(identifier: "note") as? NoteViewController else {
             return
         }
@@ -62,5 +62,5 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         vc.note = model.note
         navigationController?.pushViewController(vc, animated: true)
     }
-    
+
 }
